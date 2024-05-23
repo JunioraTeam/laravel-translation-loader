@@ -4,6 +4,7 @@ namespace Spatie\TranslationLoader;
 
 use Illuminate\Database\QueryException;
 use Illuminate\Translation\FileLoader;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Spatie\TranslationLoader\TranslationLoaders\TranslationLoader;
 
@@ -34,7 +35,12 @@ class TranslationLoaderManager extends FileLoader
             $modelClass = config('translation-loader.model');
             $model = new $modelClass;
             if (is_a($model, LanguageLine::class)) {
-                if (! Schema::hasTable($model->getTable())) {
+                try {
+                    DB::connection()->getPdo();
+                    if (! Schema::hasTable($model->getTable())) {
+                        return parent::load($locale, $group, $namespace);
+                    }
+                } catch (\Exception $pdoException) {
                     return parent::load($locale, $group, $namespace);
                 }
             }
