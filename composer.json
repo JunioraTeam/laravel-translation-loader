@@ -1,8 +1,9 @@
 {
-    "name": "spatie/laravel-translation-loader",
+    "name": "juniora/laravel-translation-loader",
     "description": "Store your language lines in the database, yaml or other sources",
     "keywords": [
         "spatie",
+        "juniora",
         "laravel",
         "laravel-translation-loader",
         "translate",
@@ -11,13 +12,19 @@
         "language",
         "i8n"
     ],
-    "homepage": "https://github.com/spatie/laravel-translation-loader",
+    "homepage": "https://github.com/JunioraTeam/laravel-translation-loader",
     "license": "MIT",
     "authors": [
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
             "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Nima HeydariNasab",
+            "email": "nima.heydari79@yahoo.com",
+            "homepage": "https://nimah79.ir",
             "role": "Developer"
         }
     ],
