@@ -1,9 +1,9 @@
 # Store your language lines in the database
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-translation-loader.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-translation-loader)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/juniora/laravel-translation-loader.svg?style=flat-square)](https://packagist.org/packages/juniora/laravel-translation-loader)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/spatie/laravel-translation-loader/run-tests.yml?branch=main&label=Tests&style=flat-square)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-translation-loader.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-translation-loader)
+[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-translation-loader.svg?style=flat-square)](https://packagist.org/packages/juniora/laravel-translation-loader)
 
 In a vanilla Laravel or Lumen installation you can use [language files](https://laravel.com/docs/localization) to localize your app. This package will enable the translations to be stored in the database. You can still use all the features of [the `__` helper function](https://laravel.com/docs/localization#retrieving-translation-strings) you know and love.
 
@@ -30,7 +30,7 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ``` bash
-composer require spatie/laravel-translation-loader
+composer require juniora/laravel-translation-loader
 ```
 
 In `config/app.php` (Laravel) or `bootstrap/app.php` (Lumen) you should replace Laravel's translation service provider
@@ -147,7 +147,7 @@ composer test
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/juniora/.github/blob/main/CONTRIBUTING.md) for details.
 
 ## Security
 
